@@ -6,9 +6,21 @@ This repository contains a template skeleton for Django Projects which includes 
 
 ## Table of Contents
 
+- [Introduction](#introduction)
 - [Requirements](#requirements)
   - [Installation](#installation)
+- [Steps that need to be taken](#firststeps)
 - [Authors](#authors)
+
+## Introduction
+
+I created this repo after working with Django on several projects because I found that although the framework does a great job on helping you build an app fairly quickly out of the box, it does not help you with some good practices with regards to deployment. 
+
+The default settings are typically built for development rather than production and I found it difficult to change my settings after building the project. My inspiration comes from this article here: https://djangostars.com/blog/configuring-django-settings-best-practices/ where the different approaches are listed. 
+
+My approach uses the django-environ package (https://django-environ.readthedocs.io/en/latest/#) which makes it relatively easy to manage your development and production environment variables.
+
+I have also included the django-debug-toolbar (https://django-debug-toolbar.readthedocs.io/en/latest/) which I found useful in debugging and optimizing Django, specifically when it came to how my app queries the database.
 
 ## Requirements
 
@@ -30,11 +42,11 @@ and run this command from the root of the repo:
 
 `python3 manage.py runserver`
 
-Navigate to http://localhost:8000 to view the development site.
-
 - To run the production server, use the following command:
 
 `ENV_PATH=.env-prod python3 manage.py runserver`
+
+Navigate to http://localhost:8000 to view the site on the local server.
 
 
 ## Authors
