@@ -31,25 +31,46 @@ I have also included the django-debug-toolbar (https://django-debug-toolbar.read
 
 - On your terminal, clone the repository with Git:
 
-`git clone https://github.com/rmiyazaki6499/django_starter.git`
+```
+git clone https://github.com/rmiyazaki6499/django_starter.git
+```
+
+- Next, make sure you create a virtual environment for your project by either using venv or pipenv:
+```
+python3 -m venv env
+source env/bin/activate
+```
 
 - In order to install Python dependencies, make sure you have pip (https://pip.pypa.io/en/stable/installing/)
 and run this command from the root of the repo:
 
-`pip3 install -r requirements.txt`
+```
+pip3 install -r requirements.txt
+```
+
+- We will now migrate the database and collect the static files:
+```
+python3 manage.py makemigrations
+python3 manage.py migrate
+python3 manage.py collectstatic
+```
 
 - To run the development server, use the following command:
 
-`python3 manage.py runserver`
+```
+python3 manage.py runserver
+```
 
 - To run the production server, use the following command:
 
-`ENV_PATH=.env-prod python3 manage.py runserver`
+```
+ENV_PATH=.env-prod python3 manage.py runserver
+```
 
 Navigate to http://localhost:8000 to view the site on the local server.
 
 
-## Authors
+## Author
 
 Created by:
 
