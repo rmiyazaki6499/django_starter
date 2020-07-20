@@ -22,6 +22,8 @@ My approach uses the django-environ package (https://django-environ.readthedocs.
 
 I have also included the django-debug-toolbar (https://django-debug-toolbar.readthedocs.io/en/latest/) which I found useful in debugging and optimizing Django, specifically when it came to how my app queries the database.
 
+**Note: Make sure to add the .env files to your .gitignore. They are not included by default so that you have a reference to what type of data should be in there.**
+
 ## Requirements
 
 - Python 3.6+
@@ -68,8 +70,6 @@ ENV_PATH=.env-prod python3 manage.py runserver
 ```
 
 Navigate to http://localhost:8000 to view the site on the local server.
-
-**Note: Make sure to add the .env files to your .gitignore. They are not included so that you have a reference to what type of data should be in there.**
 
 ## Author
 
