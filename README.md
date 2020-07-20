@@ -70,6 +70,10 @@ ENV_PATH=.env-prod python3 manage.py runserver
 ```
 
 Navigate to http://localhost:8000 to view the site on the local server.
+When you do it should look something like this:
+
+![django-default](https://user-images.githubusercontent.com/41876764/87993902-8d27df00-caa0-11ea-8f66-990932b37ca3.png)
+
 
 ## Author
 
