@@ -69,6 +69,7 @@ ENV_PATH=.env-prod python3 manage.py runserver
 
 Navigate to http://localhost:8000 to view the site on the local server.
 
+**Note: Make sure to add the .env files to your .gitignore. They are not included so that you have a reference to what type of data should be in there.**
 
 ## Author
 
