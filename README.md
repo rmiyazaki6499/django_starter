@@ -9,11 +9,11 @@ This repository contains a template skeleton for Django Projects which includes 
 - [Project Layout](#project-layout)
 - [Introduction](#introduction)
 - [Requirements](#requirements)
-- [Setting up the Django-app project with Docker](#setting-up-the-django-app-project-with-docker)
+- [Setting up the django_starter project with Docker](#setting-up-the-django-starter-project-with-docker)
   - [Install Docker](#install-docker)
   - [Build and Run the Container](#build-and-run-the-container)
   - [Cleaning up the Container and Image](#cleaning-up-the-container-and-image)
-- [Setting up the Django-app project manually](#setting-up-the-django-app-project-manually)
+- [Setting up the django_starter project manually](#setting-up-the-django-starter-project-manually)
 - [Authors](#authors)
 
 ## Project Layout
@@ -21,7 +21,7 @@ This repository contains a template skeleton for Django Projects which includes 
 Here is the project layout:
 
 ```
-django-app
+django-starter
   |___ backend/ (Django Backend settings)
   |   |___ settings.py
   |___ static_files/
@@ -49,9 +49,9 @@ I have also included the django-debug-toolbar (https://django-debug-toolbar.read
 - Python 3.7+
 - Django 3.0+
 
-### Setting up the Django-app project with Docker
+### Setting up the `django-starter` project with Docker
 
-For those that are not interested in setting up the project manually or would simply not have to worry about downloading python and its dependencies, I have created a Dockerfile and docker-compose.yml file to help create a container with everything you would need to run the **django-app**.
+For those that are not interested in setting up the project manually or would simply not have to worry about downloading python and its dependencies, I have created a Dockerfile and docker-compose.yml file to help create a container with everything you would need to run the **django_starter**.
 
 #### Install Docker
 
@@ -75,13 +75,13 @@ docker-compose version 1.26.2, build eefe0d31
 - Clone the repo to your local machine:
 
 ```
-$ git clone https://github.com/rmiyazaki6499/django-app.git
+$ git clone https://github.com/rmiyazaki6499/django_starter.git
 ```
 
 - Go into the project directory to build and run the container with:
 
 ```
-$ cd django-app/
+$ cd django_starter/
 $ docker-compose up --build
 ```
 
