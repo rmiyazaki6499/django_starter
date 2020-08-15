@@ -82,7 +82,7 @@ $ git clone https://github.com/rmiyazaki6499/django_starter.git
 
 ```
 $ cd django_starter/
-$ docker-compose up --build
+$ docker-compose up -d --build
 ```
 
 Navigate to http://localhost:8000 to view the site on the local server.
