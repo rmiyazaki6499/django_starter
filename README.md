@@ -90,6 +90,14 @@ It should look something like this:
 
 ![django-default](https://user-images.githubusercontent.com/41876764/87993902-8d27df00-caa0-11ea-8f66-990932b37ca3.png)
 
+- You can access your container with the command:
+
+```
+$ docker exec -it django_starter_django-app_1 bash
+```
+
+This will take you into the bash session within the container.
+
 #### Cleaning up the Container and Image
 
 To stop the container from running, use `<Ctrl-C>` twice.
