@@ -49,7 +49,7 @@ I have also included the django-debug-toolbar (https://django-debug-toolbar.read
 - Python 3.7+
 - Django 3.0+
 
-### Setting up the `django-starter` project with Docker
+### Setting up the `django_starter` project with Docker
 
 For those that are not interested in setting up the project manually or would simply not have to worry about downloading python and its dependencies, I have created a Dockerfile and docker-compose.yml file to help create a container with everything you would need to run the **django_starter**.
 
